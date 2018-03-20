@@ -11,6 +11,7 @@ React/Redux/Rails setup checklist
 * [ ] Create a frontend folder at the root of your project with an entry file inside of it.
 * [ ] `npm install --save`
   * `webpack`
+  * `webpack-cli -D`
   * `react`
   * `react-dom`
   * `react-router-dom`
@@ -70,6 +71,7 @@ redux
 redux-logger (if you need it)
 redux-thunk
 webpack
+webpack-cli -D
 babel-core
 babel-loader
 babel-preset-es2015
