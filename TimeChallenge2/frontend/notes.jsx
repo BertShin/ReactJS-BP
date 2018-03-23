@@ -6,7 +6,8 @@ class Notes extends React.Component {
         super(props);
         
         this.state = {
-            notes: ""
+            notes: [],
+            temp: ""
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -30,8 +31,8 @@ class Notes extends React.Component {
                     </ul>
                 </section>
 
-                <form>
-                    <textarea placeholder="Type your notes here" />
+                <form onSubmit={this.handleSubmit}>
+                    <textarea placeholder="Type your notes here" value={this.state.notes}/>
                     
                     <input type="submit" value="submit"/>
                 </form>
